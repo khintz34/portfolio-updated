@@ -26,3 +26,22 @@
 .goTos {
   margin-top: 15vh;
 }
+
+.contacts {
+  position: absolute;
+  bottom: 10vh;
+  display: flex;
+  flex-direction: row;
+  gap: 1.7vw;
+  height: 10vh;
+}
+
+.icon {
+  font-size: 4vh;
+  color: var(--primary-text);
+}
+
+.icon:hover {
+  cursor: pointer;
+  font-size: 4.5vh;
+}

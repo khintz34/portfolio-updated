@@ -1,6 +1,8 @@
 import react from "react";
 import GoTo from "../GoTo/GoTo";
 import styles from "../LeftMain/LeftMain.module.scss";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { IconContext } from "react-icons";
 
 export default function LeftMain() {
   return (
@@ -16,6 +18,10 @@ export default function LeftMain() {
         <GoTo title="About" />
         <GoTo title="Projects" />
         <GoTo title="Experience" />
+      </div>
+      <div className={styles.contacts}>
+        <FaLinkedin className={styles.icon} />
+        <FaGithub className={styles.icon} />
       </div>
     </main>
   );
