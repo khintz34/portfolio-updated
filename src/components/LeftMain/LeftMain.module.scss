@@ -1,0 +1,28 @@
+.main {
+  width: 40vw;
+  height: 90vh;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 3vw;
+}
+
+.h1 {
+  font-size: 8vh;
+  margin: 3vh 0 2vh 0;
+}
+
+.h2 {
+  font-weight: 200;
+}
+
+.h3 {
+  color: var(--tan-light);
+  margin-top: 2vh;
+}
+
+.goTos {
+  margin-top: 15vh;
+}

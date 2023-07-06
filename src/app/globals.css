@@ -3,9 +3,9 @@
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
   --primary-background: #4a5759;
-  --primary-text: #b0c4b1;
+  --primary-text: #f7e1d7;
   --green-light: #dedbd2;
-  --tan-light: #f7e1d7;
+  --tan-light: #b0c4b1;
   --pink-light: #edafb8;
 }
 
@@ -13,6 +13,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  background-color: var(--primary-background);
+  color: var(--primary-text);
 }
 
 html,
