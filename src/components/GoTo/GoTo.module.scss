@@ -12,6 +12,11 @@
   font-size: 2.2vh;
 }
 
+.h4Clicked {
+  color: var(--primary-text);
+  font-size: 2.2vh;
+}
+
 .line {
   width: 3vw;
   border: none;
@@ -26,6 +31,17 @@
     width: 7vw;
     border-color: var(--primary-text);
   }
+
+  .h4 {
+    color: var(--primary-text);
+  }
+}
+
+.clicked {
+  width: 7vw;
+  border: none;
+  border-bottom: 2px solid var(--primary-text);
+  transition: width 1s ease;
 
   .h4 {
     color: var(--primary-text);
