@@ -3,9 +3,18 @@
   flex-direction: row;
   width: 40vw;
   justify-content: center;
-  border: 2px solid red;
   min-height: 20vh;
   gap: 2vw;
+  padding: 2vh;
+  box-sizing: border-box;
+}
+
+.projectMain:hover {
+  border: 2px solid var(--primary-text);
+  border-radius: 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 2vh;
 }
 
 .projectInfo {
@@ -17,4 +26,17 @@
 .h4 {
   font-size: 3vh;
   margin-bottom: 2vh;
+}
+
+.techContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5vw;
+  margin-top: 2vh;
+}
+
+.tech {
+  background-color: var(--pink-light);
+  border-radius: 25px;
+  padding: 0.5vh 1vw;
 }
