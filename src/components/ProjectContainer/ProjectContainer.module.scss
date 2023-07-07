@@ -1,3 +1,23 @@
 .projectContainer {
   margin-bottom: 10vh;
 }
+
+.h4 {
+  font-size: 2.5vh;
+}
+
+.icon {
+  font-size: 2vh;
+  margin-left: 0.7vw;
+  transition: margin-left 1s ease;
+}
+
+.h4:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: var(--blue-light);
+  .icon {
+    margin-left: 2vw;
+    cursor: pointer;
+  }
+}

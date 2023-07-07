@@ -24,10 +24,14 @@
   .about {
     background-color: var(--secondary-background);
   }
+
+  .h4 {
+    color: var(--blue-light);
+  }
 }
 
 .imageBorder {
-  border: 1.5px solid var(--pink-light);
+  border: 1.5px solid var(--blue-dark);
   height: 80px;
   min-width: 150px;
   border-radius: 5px;
@@ -53,8 +57,9 @@
 }
 
 .tech {
-  background-color: var(--pink-light);
+  background-color: var(--blue-dark);
   border-radius: 25px;
   padding: 0.5vh 1vw;
-  color: var(--pink-dark);
+  color: var(--blue-light);
+  opacity: 0.8;
 }

@@ -5,6 +5,7 @@ import styles from "./ProjectContainer.module.scss";
 import milk from "../../assets/images/milk.png";
 import hipcamp from "../../assets/images/hipcamp.png";
 import football from "../../assets/images/footballapi.png";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function ProjectContainer() {
   return (
@@ -30,6 +31,9 @@ export default function ProjectContainer() {
         alt="EPL Team Tracker Image"
         tech={["React", "Next.js", "Vercel", "RapidAPI"]}
       />
+      <p className={styles.h4}>
+        See More Projects <FaArrowRight className={styles.icon} />
+      </p>
     </main>
   );
 }
