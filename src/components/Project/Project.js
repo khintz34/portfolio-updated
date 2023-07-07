@@ -3,18 +3,16 @@ import Image from "next/image";
 import react from "react";
 import styles from "./Project.module.scss";
 
-// todo fix border around image
-
 export default function Project({ image, alt, title, about, tech }) {
   return (
     <main className={styles.projectMain}>
       <div className={styles.imageBorder}>
         <Image
           src={image}
-          width={225}
-          height={75}
+          width={150}
+          height={80}
           alt={alt}
-          className={styles.image}
+          objectFit="cover"
         />
       </div>
       <div className={styles.projectInfo}>
