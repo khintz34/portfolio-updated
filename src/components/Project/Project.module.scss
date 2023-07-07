@@ -7,14 +7,29 @@
   gap: 2vw;
   padding: 2vh;
   box-sizing: border-box;
+  margin-bottom: 5vh;
 }
 
 .projectMain:hover {
-  border: 2px solid var(--primary-text);
+  border: 0.1px solid var(--secondary-background);
   border-radius: 20px;
   cursor: pointer;
   box-sizing: border-box;
   padding: 2vh;
+  background-color: var(--secondary-background);
+
+  .projectInfo,
+  .h4,
+  .techContainer,
+  .about {
+    background-color: var(--secondary-background);
+  }
+}
+
+.imageBorder {
+  border: 1.5px solid var(--pink-light);
+  height: 75px;
+  width: 225px;
 }
 
 .projectInfo {
@@ -39,4 +54,5 @@
   background-color: var(--pink-light);
   border-radius: 25px;
   padding: 0.5vh 1vw;
+  color: var(--pink-dark);
 }
