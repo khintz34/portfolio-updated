@@ -1,19 +1,56 @@
 .experienceMain {
   width: 40vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 2vh;
 }
 
-.topExp {
+.experienceMain:hover {
+  background-color: var(--secondary-background);
+  border: 0.1px solid var(--secondary-background);
+  border-radius: 20px;
+
+  .topExp,
+  .imageContainer,
+  .image,
+  .info,
+  .bottomExp,
+  .title,
+  .dates,
+  .interpunct,
+  .para,
+  .rando {
+    background-color: var(--secondary-background);
+  }
+}
+
+.leftExp {
   display: flex;
-  flex-direction: row;
-  gap: 2vw;
+  flex-direction: column;
+  width: 10vw;
+}
+
+.rightExp {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.topExp {
+  height: 10vh;
+}
+
+.imageContainer {
+  width: 9vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image {
-  height: 6vh;
-  width: 6vh;
+  height: 8vh;
+  width: 8vh;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -21,8 +58,23 @@
 .info {
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+
+.interpunct {
+  font-size: 3vh;
+  padding: 0 1.2vw;
 }
 
 .bottomExp {
-  margin-left: 50vh;
+  margin-left: 9vw;
+}
+
+.title {
+  font-size: 2.5vh;
+}
+
+.dates {
+  font-size: 2.2vh;
+  padding-top: 1vh;
 }
