@@ -31,6 +31,7 @@ export default function ProjectContainer() {
         alt="EPL Team Tracker Image"
         tech={["React", "Next.js", "Vercel", "RapidAPI"]}
       />
+
       <p className={styles.h4}>
         See More Projects <FaArrowRight className={styles.icon} />
       </p>
