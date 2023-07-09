@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: row;
   padding: 2vh;
+  margin-bottom: 5vh;
 }
 
 .experienceMain:hover {
@@ -11,6 +12,8 @@
   border-radius: 20px;
 
   .topExp,
+  .leftExp,
+  .rightExp,
   .imageContainer,
   .image,
   .info,
@@ -28,11 +31,14 @@
   display: flex;
   flex-direction: column;
   width: 10vw;
+  align-items: center;
 }
 
 .rightExp {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 2vh;
 }
 
@@ -40,12 +46,18 @@
   height: 10vh;
 }
 
+.blank {
+  height: 10vh;
+}
+
 .imageContainer {
-  width: 9vw;
+  width: 10vh;
   height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 .image {
@@ -67,7 +79,7 @@
 }
 
 .bottomExp {
-  margin-left: 9vw;
+  //   margin-left: 9vw;
 }
 
 .title {

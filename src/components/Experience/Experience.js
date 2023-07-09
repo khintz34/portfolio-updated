@@ -3,9 +3,6 @@ import Image from "next/image";
 import react from "react";
 import styles from "./Experience.module.scss";
 
-// todo change topExp to leftExp and have that just be image
-// todo change bttomExp to rightExp and make that flex column
-
 export default function Experience({
   title,
   company,
@@ -19,18 +16,19 @@ export default function Experience({
     <main className={styles.experienceMain}>
       <div className={styles.leftExp}>
         <div className={styles.imageContainer}>
-          {/* <Image
+          <Image
             src={image}
             width={80}
             height={80}
+            placeholder="blur"
             alt={alt}
-            objectFit="contain"
-          /> */}
-          <img src={image.src} alt="" className={styles.image} />
+            objectFit="fill"
+          />
+          <div className={styles.blank}></div>
         </div>
       </div>
       <div className={styles.rightExp}>
-        <div className={styles.rando}>
+        <div className={styles.topExp}>
           <div className={styles.info}>
             <p className={styles.title}>{title}</p>
             <p className={styles.interpunct}>·</p>

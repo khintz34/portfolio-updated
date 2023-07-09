@@ -3,6 +3,8 @@ import Image from "next/image";
 import react from "react";
 import styles from "./Project.module.scss";
 
+// todo why is epl trakcer different than others??
+
 export default function Project({ image, alt, title, about, tech }) {
   return (
     <main className={styles.projectMain}>
