@@ -1,5 +1,5 @@
 "use client";
-import react, { useState, useRef } from "react";
+import react, { useState, useRef, useEffect } from "react";
 import GoTo from "@/components/GoTo/GoTo";
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -9,6 +9,7 @@ import ProjectContainer from "@/components/ProjectContainer/ProjectContainer";
 import ExperienceContainer from "@/components/ExperienceContainer/ExperienceContainer";
 
 // todo create breakpoints to change which section is active... ask Dave avout thiis
+//todo create mobile view
 
 export default function Home() {
   const [aboutSection, setAboutSection] = useState(true);
@@ -17,6 +18,15 @@ export default function Home() {
   const aboutRef = useRef(null);
   const projectRef = useRef(null);
   const expRef = useRef(null);
+  const [mobile, setMobile] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth < 600) {
+      setMobile(true);
+    } else {
+      setMobile(false);
+    }
+  }, []);
 
   function handleClick(item) {
     setAboutSection(false);
@@ -52,7 +62,12 @@ export default function Home() {
               meticulous code organization, and high-performance solutions.
             </h3>
           </div>
-          <div className={styles.goTos}>
+          <div className={styles.contacts}>
+            <FaLinkedin className={styles.icon} />
+            <FaGithub className={styles.icon} />
+          </div>
+          <h2>About</h2>
+          <div className={` ${styles.goTos}`}>
             <GoTo
               title="About"
               status={aboutSection}
@@ -77,10 +92,6 @@ export default function Home() {
                 scrollTo(expRef);
               }}
             />
-          </div>
-          <div className={styles.contacts}>
-            <FaLinkedin className={styles.icon} />
-            <FaGithub className={styles.icon} />
           </div>
         </div>
       </div>
