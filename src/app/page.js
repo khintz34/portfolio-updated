@@ -8,7 +8,6 @@ import About from "@/components/About/About";
 import ProjectContainer from "@/components/ProjectContainer/ProjectContainer";
 import ExperienceContainer from "@/components/ExperienceContainer/ExperienceContainer";
 
-// todo finish scrollTo
 // todo create breakpoints to change which section is active... ask Dave avout thiis
 
 export default function Home() {
@@ -59,7 +58,7 @@ export default function Home() {
               status={aboutSection}
               onClick={() => {
                 handleClick("about");
-                scrollTo({ aboutRef });
+                scrollTo(aboutRef);
               }}
             />
             <GoTo
@@ -75,7 +74,7 @@ export default function Home() {
               status={expSection}
               onClick={() => {
                 handleClick("exp");
-                scrollTo({ expRef });
+                scrollTo(expRef);
               }}
             />
           </div>
