@@ -10,6 +10,7 @@ import ExperienceContainer from "@/components/ExperienceContainer/ExperienceCont
 
 // todo create breakpoints to change which section is active... ask Dave avout thiis
 //todo create mobile view
+// todo position sticky on headings
 
 export default function Home() {
   const [aboutSection, setAboutSection] = useState(true);
@@ -46,7 +47,6 @@ export default function Home() {
     console.log(el);
     let item = el.current;
     console.log(el.current);
-    // el.current.scrollIntoView({ behavior: "smooth", block: "start" });
     item.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
@@ -66,7 +66,6 @@ export default function Home() {
             <FaLinkedin className={styles.icon} />
             <FaGithub className={styles.icon} />
           </div>
-          <h2>About</h2>
           <div className={` ${styles.goTos}`}>
             <GoTo
               title="About"
@@ -96,12 +95,15 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.rightCol}>
+        <h2 className={styles.heading}>About</h2>
         <div ref={aboutRef}>
           <About />
         </div>
+        <h2 className={styles.heading}>Projects</h2>
         <div ref={projectRef}>
           <ProjectContainer />
         </div>
+        <h2 className={styles.heading}>Experience</h2>
         <div ref={expRef}>
           <ExperienceContainer />
         </div>

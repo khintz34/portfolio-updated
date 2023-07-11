@@ -15,6 +15,8 @@ export default function Project({ image, alt, title, about, tech }) {
           height={80}
           alt={alt}
           objectFit="cover"
+          // sizes="(max-width: 501px) 40vw, 10vw"
+          // fill
         />
       </div>
       <div className={styles.projectInfo}>

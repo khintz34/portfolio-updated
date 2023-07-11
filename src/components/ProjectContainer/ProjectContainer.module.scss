@@ -21,3 +21,9 @@
     cursor: pointer;
   }
 }
+
+@media screen and (max-width: 501px) {
+  .projectContainer {
+    width: 92vw;
+  }
+}
