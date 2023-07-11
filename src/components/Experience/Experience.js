@@ -3,7 +3,7 @@ import Image from "next/image";
 import react, { useState, useEffect } from "react";
 import styles from "./Experience.module.scss";
 
-// todo desktop needs fixing
+// todo mobile images need fixing
 
 export default function Experience({
   title,
@@ -53,7 +53,7 @@ export default function Experience({
           </div>
         </div>
       ) : (
-        <div>
+        <div className={styles.experienceContainer}>
           <div className={styles.leftExp}>
             <div className={styles.imageContainer}>
               <Image

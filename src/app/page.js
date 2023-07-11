@@ -9,8 +9,8 @@ import ProjectContainer from "@/components/ProjectContainer/ProjectContainer";
 import ExperienceContainer from "@/components/ExperienceContainer/ExperienceContainer";
 
 // todo create breakpoints to change which section is active... ask Dave avout thiis
-//todo create mobile view
 // todo position sticky on headings
+// todo add links for contact icons
 
 export default function Home() {
   const [aboutSection, setAboutSection] = useState(true);
@@ -27,7 +27,7 @@ export default function Home() {
     } else {
       setMobile(false);
     }
-  }, []);
+  });
 
   function handleClick(item) {
     setAboutSection(false);

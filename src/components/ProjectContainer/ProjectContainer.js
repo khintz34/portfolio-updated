@@ -6,6 +6,9 @@ import milk from "../../assets/images/milk.png";
 import hipcamp from "../../assets/images/hipcamp.png";
 import football from "../../assets/images/footballapi.png";
 import { FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
+
+// todo link to project archive
 
 export default function ProjectContainer() {
   return (
@@ -33,7 +36,9 @@ export default function ProjectContainer() {
       />
 
       <p className={styles.h4}>
-        See More Projects <FaArrowRight className={styles.icon} />
+        <Link href={"/ProjectArchive"}>
+          See More Projects <FaArrowRight className={styles.icon} />
+        </Link>
       </p>
     </main>
   );

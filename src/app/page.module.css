@@ -109,11 +109,13 @@
   .h2 {
     font-weight: 200;
     margin: 3vh 0;
+    font-size: 3vh;
   }
 
   .h3 {
     color: var(--tan-light);
     margin: 2vh 0;
+    font-size: 2vh;
   }
 
   .goTos {

@@ -2,12 +2,13 @@
   display: flex;
   flex-direction: row;
   width: 40vw;
-  justify-content: center;
+  // justify-content: center;
   min-height: 20vh;
   gap: 2vw;
   padding: 2vh;
   box-sizing: border-box;
   margin-bottom: 5vh;
+  // overflow: hidden;
 }
 
 .projectMain:hover {
@@ -54,6 +55,7 @@
   flex-direction: row;
   gap: 1.5vw;
   margin-top: 2vh;
+  // max-width: 25vw;
 }
 
 .tech {
@@ -62,6 +64,10 @@
   padding: 0.5vh 1vw;
   color: var(--blue-light);
   opacity: 0.8;
+}
+
+.about {
+  // max-width: 22vw;
 }
 
 @media screen and (max-width: 501px) {
@@ -82,6 +88,7 @@
 
   .about {
     font-size: 1.5vh;
+    padding-right: 4vw;
   }
 
   .h4 {

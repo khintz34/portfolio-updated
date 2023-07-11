@@ -3,7 +3,8 @@ import Image from "next/image";
 import react from "react";
 import styles from "./Project.module.scss";
 
-// todo why is epl trakcer different than others??
+// todo why is epl trakcer different than others?? -- tech container
+// todo mobile images need fixing
 
 export default function Project({ image, alt, title, about, tech }) {
   return (
