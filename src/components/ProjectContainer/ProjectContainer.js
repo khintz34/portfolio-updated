@@ -8,8 +8,6 @@ import football from "../../assets/images/footballapi.png";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 
-// todo link to project archive
-
 export default function ProjectContainer() {
   return (
     <main className={styles.projectContainer}>
