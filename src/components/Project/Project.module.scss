@@ -58,6 +58,7 @@
   margin-top: 2vh;
   // position: absolute;
   // bottom: 1vh;
+  flex-wrap: wrap;
 }
 
 .tech {
@@ -66,13 +67,14 @@
   padding: 0.5vh 1vw;
   color: var(--blue-light);
   opacity: 0.8;
+  white-space: nowrap;
 }
 
 .about {
   // max-width: 22vw;
 }
 
-@media screen and (max-width: 501px) {
+@media screen and (max-width: 999px) {
   .projectMain {
     width: 92vw;
     flex-direction: column-reverse;

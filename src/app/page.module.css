@@ -69,7 +69,7 @@
   display: none;
 }
 
-@media screen and (max-width: 501px) {
+@media screen and (max-width: 999px) {
   .main {
     flex-direction: column;
     padding: 0 4vw;
