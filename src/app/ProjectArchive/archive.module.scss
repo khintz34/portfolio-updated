@@ -1,12 +1,11 @@
 .archiveMain {
   display: flex;
   flex-direction: column;
+  padding-left: 5vw;
 }
 
 .heading {
-  position: relative;
-  left: 4vw;
-  margin-top: 5vh;
+  margin: 5vh 0 2.5vh 0;
 }
 
 .h4 {
@@ -33,5 +32,19 @@
   .icon {
     cursor: pointer;
     right: 1vw;
+  }
+}
+
+.projectContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3vh 5vw;
+  margin-top: 5vh;
+}
+
+@media screen and (max-width: 501px) {
+  .projectContainer {
+    flex-direction: column;
   }
 }
