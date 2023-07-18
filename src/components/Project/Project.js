@@ -14,7 +14,8 @@ export default function Project({ image, alt, title, about, tech }) {
           width={150}
           height={80}
           alt={alt}
-          objectFit="cover"
+          // objectFit="cover"
+          style={{ objectFit: "cover" }}
           // sizes="(max-width: 501px) 40vw, 10vw"
           // fill
         />

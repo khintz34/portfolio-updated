@@ -36,7 +36,8 @@ export default function Experience({
                 height={85}
                 placeholder="blur"
                 alt={alt}
-                objectFit="fill"
+                // objectFit="fill"
+                style={{ objectFit: "fill" }}
               />
               <div className={styles.blank}></div>
             </div>
@@ -63,7 +64,8 @@ export default function Experience({
                 height={85}
                 placeholder="blur"
                 alt={alt}
-                objectFit="fill"
+                // objectFit="fill"
+                style={{ objectFit: "fill" }}
               />
               <div className={styles.blank}></div>
             </div>
