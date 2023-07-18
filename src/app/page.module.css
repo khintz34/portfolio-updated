@@ -114,7 +114,7 @@
 
   .h3 {
     color: var(--tan-light);
-    margin: 2vh 0;
+    margin: 2vh 2vw 2vh 0;
     font-size: 2vh;
     line-height: 2.5vh;
   }

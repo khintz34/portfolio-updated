@@ -10,7 +10,6 @@ import ExperienceContainer from "@/components/ExperienceContainer/ExperienceCont
 
 // todo create breakpoints to change which section is active... ask Dave avout thiis
 // todo position sticky on headings
-// todo add links for contact icons
 
 export default function Home() {
   const [aboutSection, setAboutSection] = useState(true);
@@ -65,8 +64,20 @@ export default function Home() {
             </h3>
           </div>
           <div className={styles.contacts}>
-            <FaLinkedin className={styles.icon} />
-            <FaGithub className={styles.icon} />
+            <a
+              href="https://www.linkedin.com/in/kevin-p-hintz/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className={styles.icon} />
+            </a>
+            <a
+              href="https://github.com/khintz34"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className={styles.icon} />
+            </a>
           </div>
           <div className={` ${styles.goTos}`}>
             <GoTo
