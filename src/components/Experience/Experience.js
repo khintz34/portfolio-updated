@@ -4,6 +4,7 @@ import react, { useState, useEffect } from "react";
 import styles from "./Experience.module.scss";
 
 // todo mobile images need fixing
+// todo side by side title/company is showing up funny
 
 export default function Experience({
   title,

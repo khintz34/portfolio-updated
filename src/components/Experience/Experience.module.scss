@@ -60,6 +60,10 @@
   justify-content: center;
 }
 
+.para {
+  line-height: 3vh;
+}
+
 .blank {
   height: 10vh;
 }
@@ -140,7 +144,8 @@
   .para {
     width: 92vw;
     padding: 0 4vw 0 0;
-    font-size: 1.5vh;
+    font-size: 2vh;
+    line-height: 2.5vh;
   }
 
   .title,

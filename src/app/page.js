@@ -56,7 +56,9 @@ export default function Home() {
         <div className={styles.leftMain}>
           <div>
             <h1 className={styles.h1}>Kevin Hintz</h1>
-            <h2 className={styles.h2}>Software Engineer at U.S. Bank</h2>
+            <h2 className={styles.h2}>
+              Software Engineer <br></br> U.S. Bank
+            </h2>
             <h3 className={styles.h3}>
               Dedicated to optimizing customer experience through clean UI,
               meticulous code organization, and high-performance solutions.
