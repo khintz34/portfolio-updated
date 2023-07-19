@@ -2,10 +2,12 @@
 import Image from "next/image";
 import react from "react";
 import styles from "./Project.module.scss";
+import { BsArrowUpRight } from "react-icons/bs";
 
 // todo mobile images need fixing
 // todo mobile turn off mobile click
 // todo add modal or links
+// todo add arrow animation on hover
 
 export default function Project({ image, alt, title, about, tech }) {
   return (
@@ -20,7 +22,10 @@ export default function Project({ image, alt, title, about, tech }) {
         />
       </div>
       <div className={styles.projectInfo}>
-        <h4 className={styles.h4}>{title}</h4>
+        <h4 className={styles.h4}>
+          {title}
+          <BsArrowUpRight className={styles.icon} />
+        </h4>
         <p className={styles.about}>{about}</p>
         <div className={styles.techContainer}>
           {tech.map((val) => {
