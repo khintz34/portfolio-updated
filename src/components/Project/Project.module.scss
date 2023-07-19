@@ -95,7 +95,7 @@
   .projectMain:hover {
     border: none;
     box-sizing: border-box;
-    padding: 0;
+    padding: 0 0 2vh 0;
     background-color: var(--main-background);
 
     .projectInfo,
@@ -108,6 +108,11 @@
 
     .h4 {
       color: var(--blue-light);
+    }
+
+    .icon {
+      margin-left: 1vw;
+      margin-bottom: 0vh;
     }
   }
 

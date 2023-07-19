@@ -16,6 +16,7 @@ export default function ExperienceContainer() {
         dates="Sep 2021 - Present"
         image={usb}
         alt="U.S. Bank logo"
+        companyLink="https://www.usbank.com/business-banking/business-services/payment-processing/merchant-services/accept-credit-card-payments.html?ecid=PS_58831&c3apidt=p76980465324&ds_e=GOOGLE&ds_c=SMB-Merchant+Services_(Prospecting-BD)+General_BD_All_All_NAT_1841401&ds_a=US+Bank_PSP_BD_EX&ds_k=us+bank+credit+card+processing&ds_kids=p76980465324&i=1&gclsrc=aw.ds&&gclid=EAIaIQobChMIkvfM8uGbgAMVM-bjBx1_SQH8EAAYASAAEgLBm_D_BwE&gclsrc=aw.ds"
       />
       <Experience
         title="Project Manager"
@@ -24,6 +25,7 @@ export default function ExperienceContainer() {
         dates="Mar 2021 - Sep 2021"
         image={usb}
         alt="U.S. Bank logo"
+        companyLink="https://www.usbank.com/business-banking/business-services/payment-processing/merchant-services/accept-credit-card-payments.html?ecid=PS_58831&c3apidt=p76980465324&ds_e=GOOGLE&ds_c=SMB-Merchant+Services_(Prospecting-BD)+General_BD_All_All_NAT_1841401&ds_a=US+Bank_PSP_BD_EX&ds_k=us+bank+credit+card+processing&ds_kids=p76980465324&i=1&gclsrc=aw.ds&&gclid=EAIaIQobChMIkvfM8uGbgAMVM-bjBx1_SQH8EAAYASAAEgLBm_D_BwE&gclsrc=aw.ds"
       />
       <Experience
         title="HR Coordinator"
@@ -32,6 +34,7 @@ export default function ExperienceContainer() {
         dates="Jun 2018 - Mar 2021"
         image={usb}
         alt="U.S. Bank logo"
+        companyLink="https://www.usbank.com/business-banking/business-services/payment-processing/merchant-services/accept-credit-card-payments.html?ecid=PS_58831&c3apidt=p76980465324&ds_e=GOOGLE&ds_c=SMB-Merchant+Services_(Prospecting-BD)+General_BD_All_All_NAT_1841401&ds_a=US+Bank_PSP_BD_EX&ds_k=us+bank+credit+card+processing&ds_kids=p76980465324&i=1&gclsrc=aw.ds&&gclid=EAIaIQobChMIkvfM8uGbgAMVM-bjBx1_SQH8EAAYASAAEgLBm_D_BwE&gclsrc=aw.ds"
       />
       <Experience
         title="B.A. Business"
@@ -40,6 +43,7 @@ export default function ExperienceContainer() {
         dates="Sep 2014 - May 2018"
         image={bethel}
         alt="Bethel University Logo"
+        companyLink="https://www.bethel.edu/"
       />
       <Experience
         title="Completed"
@@ -48,6 +52,7 @@ export default function ExperienceContainer() {
         dates="Oct 2020 - Jan 2023"
         image={odin}
         alt="The Odin Project Logo"
+        companyLink="https://www.theodinproject.com/"
       />
     </main>
   );

@@ -4,14 +4,16 @@ import react from "react";
 import styles from "./Project.module.scss";
 import { BsArrowUpRight } from "react-icons/bs";
 
-// todo mobile images need fixing
 // todo mobile turn off mobile click
 // todo add modal or links
-// todo add arrow animation on hover
 
-export default function Project({ image, alt, title, about, tech }) {
+export default function Project({ image, alt, title, about, tech, link }) {
+  function gotoLink() {
+    window.open(link, "blank");
+  }
+
   return (
-    <main className={styles.projectMain}>
+    <main className={styles.projectMain} onClick={gotoLink}>
       <div className={styles.imageBorder}>
         <Image
           src={image}

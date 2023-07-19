@@ -8,6 +8,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 // todo side by side title/company is showing up funny
 // todo mobile turn off mobile click
 // todo add modal or links
+// todo fix layout of title and company
 
 export default function Experience({
   title,
@@ -27,8 +28,13 @@ export default function Experience({
       setMobile(false);
     }
   }, []);
+
+  function gotoLink() {
+    window.open(companyLink, "blank");
+  }
+
   return (
-    <main className={styles.experienceMain}>
+    <main className={styles.experienceMain} onClick={gotoLink}>
       {mobile ? (
         <div className={styles.expMobile}>
           <div className={styles.topDiv}>
