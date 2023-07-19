@@ -10,7 +10,7 @@
   --pink-dark: #e55066;
   --secondary-background: #525e60;
   --blue-dark: #0d1b2a;
-  --blue-light: #537faf;
+  --blue-light: #426e9d;
 }
 
 * {
@@ -24,5 +24,5 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  overflow-x: clip;
 }

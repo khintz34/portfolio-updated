@@ -4,6 +4,8 @@ import react from "react";
 import styles from "./Project.module.scss";
 
 // todo mobile images need fixing
+// todo mobile turn off mobile click
+// todo add modal or links
 
 export default function Project({ image, alt, title, about, tech }) {
   return (
@@ -14,10 +16,7 @@ export default function Project({ image, alt, title, about, tech }) {
           width={150}
           height={80}
           alt={alt}
-          // objectFit="cover"
           style={{ objectFit: "cover" }}
-          // sizes="(max-width: 501px) 40vw, 10vw"
-          // fill
         />
       </div>
       <div className={styles.projectInfo}>

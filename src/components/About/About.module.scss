@@ -1,10 +1,10 @@
 .aboutMain {
-  min-height: 90vh;
+  min-height: 92vh;
   padding: 0 4vw 5vh 0;
 }
 
 .intro {
-  margin-top: 3vh;
+  margin-bottom: 3vh;
   font-size: 2.2vh;
   line-height: 4vh;
 }
@@ -21,8 +21,7 @@
 
 @media screen and (max-width: 999px) {
   .aboutMain {
-    margin-bottom: 10vh;
-    // padding: 0;
+    margin-bottom: 5vh;
     width: 92vw;
   }
 

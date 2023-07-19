@@ -99,6 +99,9 @@
     display: block;
     position: sticky;
     top: 0vh;
+    z-index: 1000;
+    padding: 2vh 0;
+    color: var(--tan-light);
   }
 
   .h1 {
@@ -114,7 +117,7 @@
 
   .h3 {
     color: var(--tan-light);
-    margin: 2vh 2vw 2vh 0;
+    margin: 2vh 4vw 2vh 0;
     font-size: 2vh;
     line-height: 2.5vh;
   }

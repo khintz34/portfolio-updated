@@ -9,7 +9,6 @@ import ProjectContainer from "@/components/ProjectContainer/ProjectContainer";
 import ExperienceContainer from "@/components/ExperienceContainer/ExperienceContainer";
 
 // todo create breakpoints to change which section is active... ask Dave avout thiis
-// todo position sticky on headings
 
 export default function Home() {
   const [aboutSection, setAboutSection] = useState(true);

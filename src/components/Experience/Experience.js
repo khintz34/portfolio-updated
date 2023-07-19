@@ -5,6 +5,8 @@ import styles from "./Experience.module.scss";
 
 // todo mobile images need fixing
 // todo side by side title/company is showing up funny
+// todo mobile turn off mobile click
+// todo add modal or links
 
 export default function Experience({
   title,
@@ -36,7 +38,6 @@ export default function Experience({
                 height={85}
                 placeholder="blur"
                 alt={alt}
-                // objectFit="fill"
                 style={{ objectFit: "fill" }}
               />
               <div className={styles.blank}></div>
@@ -64,7 +65,6 @@ export default function Experience({
                 height={85}
                 placeholder="blur"
                 alt={alt}
-                // objectFit="fill"
                 style={{ objectFit: "fill" }}
               />
               <div className={styles.blank}></div>
