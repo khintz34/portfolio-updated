@@ -29,6 +29,11 @@
   .h4 {
     color: var(--blue-light);
   }
+
+  .icon {
+    margin-left: 1.5vw;
+    margin-bottom: 0.7vh;
+  }
 }
 
 .imageBorder {
@@ -61,8 +66,10 @@
 
 .icon {
   margin-left: 1vw;
-  font-size: 1.5vh;
+  font-size: 1.8vh;
   background-color: var(--main-background);
+  transition: 1s ease;
+  font-weight: bolder;
 }
 
 .tech {
@@ -85,8 +92,26 @@
     padding: 0 0 2vh 0;
   }
 
+  .projectMain:hover {
+    border: none;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: var(--main-background);
+
+    .projectInfo,
+    .h4,
+    .techContainer,
+    .about,
+    .icon {
+      background-color: var(--main-background);
+    }
+
+    .h4 {
+      color: var(--blue-light);
+    }
+  }
+
   .imageBorder {
-    // height: 15vh;
     height: 80px;
     width: 150px;
     overflow: hidden;

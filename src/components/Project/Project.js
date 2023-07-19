@@ -24,7 +24,10 @@ export default function Project({ image, alt, title, about, tech }) {
       <div className={styles.projectInfo}>
         <h4 className={styles.h4}>
           {title}
-          <BsArrowUpRight className={styles.icon} />
+          <BsArrowUpRight
+            className={styles.icon}
+            style={{ textDecoration: "underline" }}
+          />
         </h4>
         <p className={styles.about}>{about}</p>
         <div className={styles.techContainer}>

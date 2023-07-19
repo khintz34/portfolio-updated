@@ -33,8 +33,14 @@
   .interpunct,
   .para,
   .rando,
-  .experienceContainer {
+  .experienceContainer,
+  .icon {
     background-color: var(--secondary-background);
+  }
+
+  .icon {
+    margin-left: 1.5vw;
+    margin-bottom: 0.7vh;
   }
 }
 
@@ -76,6 +82,14 @@
   align-items: center;
   overflow: hidden;
   border-radius: 50%;
+}
+
+.icon {
+  margin-left: 1vw;
+  font-size: 1.8vh;
+  background-color: var(--main-background);
+  transition: 1s ease;
+  font-weight: bolder;
 }
 
 .image {

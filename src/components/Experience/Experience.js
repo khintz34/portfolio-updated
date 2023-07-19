@@ -2,6 +2,7 @@
 import Image from "next/image";
 import react, { useState, useEffect } from "react";
 import styles from "./Experience.module.scss";
+import { BsArrowUpRight } from "react-icons/bs";
 
 // todo mobile images need fixing
 // todo side by side title/company is showing up funny
@@ -46,7 +47,13 @@ export default function Experience({
               <div className={styles.info}>
                 <p className={styles.title}>{title}</p>
                 <p className={styles.interpunct}>·</p>
-                <p className={styles.title}>{company}</p>
+                <p className={styles.title}>
+                  {company}{" "}
+                  <BsArrowUpRight
+                    className={styles.icon}
+                    style={{ textDecoration: "underline" }}
+                  />
+                </p>
               </div>
               <div className={styles.dates}>{dates}</div>
             </div>
@@ -75,7 +82,13 @@ export default function Experience({
               <div className={styles.info}>
                 <p className={styles.title}>{title}</p>
                 <p className={styles.interpunct}>·</p>
-                <p className={styles.title}>{company}</p>
+                <p className={styles.title}>
+                  {company}
+                  <BsArrowUpRight
+                    className={styles.icon}
+                    style={{ textDecoration: "underline" }}
+                  />
+                </p>
               </div>
               <div className={styles.dates}>{dates}</div>
             </div>
