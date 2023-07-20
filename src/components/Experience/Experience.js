@@ -4,8 +4,6 @@ import react, { useState, useEffect } from "react";
 import styles from "./Experience.module.scss";
 import { BsArrowUpRight } from "react-icons/bs";
 
-// todo fix layout of title and company
-
 export default function Experience({
   title,
   company,
@@ -18,7 +16,7 @@ export default function Experience({
   const [mobile, setMobile] = useState(false);
 
   useEffect(() => {
-    if (window.innerWidth < 600) {
+    if (window.innerWidth < 999) {
       setMobile(true);
     } else {
       setMobile(false);

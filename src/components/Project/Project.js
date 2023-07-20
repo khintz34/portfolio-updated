@@ -8,7 +8,7 @@ export default function Project({ image, alt, title, about, tech, link }) {
   const [mobile, setMobile] = useState(false);
 
   useEffect(() => {
-    if (window.innerWidth < 600) {
+    if (window.innerWidth < 999) {
       setMobile(true);
     } else {
       setMobile(false);
