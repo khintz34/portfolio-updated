@@ -4,10 +4,6 @@ import react, { useState, useEffect } from "react";
 import styles from "./Experience.module.scss";
 import { BsArrowUpRight } from "react-icons/bs";
 
-// todo mobile images need fixing
-// todo side by side title/company is showing up funny
-// todo mobile turn off mobile click
-// todo add modal or links
 // todo fix layout of title and company
 
 export default function Experience({
@@ -29,12 +25,14 @@ export default function Experience({
     }
   }, []);
 
-  function gotoLink() {
-    window.open(companyLink, "blank");
+  function gotoLink(el) {
+    if (!mobile || (mobile && el)) {
+      window.open(companyLink, "blank");
+    }
   }
 
   return (
-    <main className={styles.experienceMain} onClick={gotoLink}>
+    <main className={styles.experienceMain} onClick={() => gotoLink(false)}>
       {mobile ? (
         <div className={styles.expMobile}>
           <div className={styles.topDiv}>
@@ -53,7 +51,7 @@ export default function Experience({
               <div className={styles.info}>
                 <p className={styles.title}>{title}</p>
                 <p className={styles.interpunct}>·</p>
-                <p className={styles.title}>
+                <p className={styles.title} onClick={() => gotoLink(true)}>
                   {company}{" "}
                   <BsArrowUpRight
                     className={styles.icon}

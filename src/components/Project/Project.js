@@ -1,19 +1,28 @@
 "use client";
 import Image from "next/image";
-import react from "react";
+import react, { useState, useEffect } from "react";
 import styles from "./Project.module.scss";
 import { BsArrowUpRight } from "react-icons/bs";
 
-// todo mobile turn off mobile click
-// todo add modal or links
-
 export default function Project({ image, alt, title, about, tech, link }) {
-  function gotoLink() {
-    window.open(link, "blank");
+  const [mobile, setMobile] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth < 600) {
+      setMobile(true);
+    } else {
+      setMobile(false);
+    }
+  }, []);
+
+  function gotoLink(el) {
+    if (!mobile || (mobile && el)) {
+      window.open(link, "blank");
+    }
   }
 
   return (
-    <main className={styles.projectMain} onClick={gotoLink}>
+    <main className={styles.projectMain} onClick={() => gotoLink(false)}>
       <div className={styles.imageBorder}>
         <Image
           src={image}
@@ -24,7 +33,7 @@ export default function Project({ image, alt, title, about, tech, link }) {
         />
       </div>
       <div className={styles.projectInfo}>
-        <h4 className={styles.h4}>
+        <h4 className={styles.h4} onClick={() => gotoLink(true)}>
           {title}
           <BsArrowUpRight
             className={styles.icon}

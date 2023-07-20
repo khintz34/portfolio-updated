@@ -20,6 +20,7 @@
   background-color: var(--secondary-background);
   border: 0.1px solid var(--secondary-background);
   border-radius: 20px;
+  cursor: pointer;
 
   .topExp,
   .leftExp,
@@ -34,7 +35,8 @@
   .para,
   .rando,
   .experienceContainer,
-  .icon {
+  .icon,
+  .topDiv {
     background-color: var(--secondary-background);
   }
 
@@ -165,5 +167,37 @@
   .title,
   .dates {
     font-size: 2vh;
+  }
+
+  .icon {
+    font-size: 1.5vh;
+  }
+
+  .experienceMain:hover {
+    background-color: var(--main-background);
+    border: 0.1px solid var(--main-background);
+
+    .topExp,
+    .leftExp,
+    .rightExp,
+    .imageContainer,
+    .image,
+    .info,
+    .bottomExp,
+    .title,
+    .dates,
+    .interpunct,
+    .para,
+    .rando,
+    .experienceContainer,
+    .icon,
+    .topDiv {
+      background-color: var(--main-background);
+    }
+
+    .icon {
+      margin-left: 1vw;
+      margin-bottom: 0vh;
+    }
   }
 }
