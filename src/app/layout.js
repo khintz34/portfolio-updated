@@ -13,8 +13,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* <head>
-         <meta property="og:image" content={pic} />
+      <head>
+        <meta property="og:image" content="<generated>" />
         <meta property="og:title" content="Kevin Hintz SWE Portfolio" />
         <meta
           property="og:description"
@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
           property="twitter:description"
           content="Kevin Hintz Frontend Engineer Portfolio"
         />
-      </head>  */}
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
