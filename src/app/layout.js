@@ -14,13 +14,22 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta property="og:image" content="../assets/images/og.png" />
+        {/* <meta property="og:image" content="../assets/images/og.png" /> */}
+        <meta property="og:image" content={pic} />
         <meta
           property="og:title"
           content="Kevin Hintz's Engineering Portfolio"
         />
         <meta
           property="og:description"
+          content="Kevin Hintz Frontend Engineer"
+        />
+        <meta
+          property="twitter:title"
+          content="Kevin Hintz Frontend Engineer"
+        />
+        <meta
+          property="twitter:description"
           content="Kevin Hintz Frontend Engineer"
         />
       </head>
