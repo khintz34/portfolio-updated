@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Kevin's Portfolio",
   description: "Frontend Software Engineer",
-  image: { pic },
+  image: pic,
 };
 
 export default function RootLayout({ children }) {
@@ -16,10 +16,7 @@ export default function RootLayout({ children }) {
       <head>
         {/* <meta property="og:image" content="../assets/images/og.png" /> */}
         <meta property="og:image" content={pic} />
-        <meta
-          property="og:title"
-          content="Kevin Hintz's Engineering Portfolio"
-        />
+        <meta property="og:title" content="Kevin Hintz SWE Portfolio" />
         <meta
           property="og:description"
           content="Kevin Hintz Frontend Engineer"
@@ -30,7 +27,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="twitter:description"
-          content="Kevin Hintz Frontend Engineer"
+          content="Kevin Hintz Frontend Engineer Portfolio"
         />
       </head>
       <body className={inter.className}>{children}</body>
