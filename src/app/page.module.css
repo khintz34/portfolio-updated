@@ -22,7 +22,7 @@
 
 .h1 {
   font-size: 8vh;
-  margin: 8vh 0 2vh 0;
+  margin: 3rem 0 2vh 0;
 }
 
 .h2 {
@@ -33,6 +33,7 @@
   color: var(--tan-light);
   margin-top: 2vh;
   line-height: 3vh;
+  font-weight: 200;
 }
 
 .goTos {
