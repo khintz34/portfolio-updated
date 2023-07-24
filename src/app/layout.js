@@ -14,8 +14,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* <meta property="og:image" content="../assets/images/og.png" /> */}
-        <meta property="og:image" content={pic} />
+        <meta property="og:image" content="../assets/images/og.png" />
+        {/* <meta property="og:image" content={pic} /> */}
         <meta property="og:title" content="Kevin Hintz SWE Portfolio" />
         <meta
           property="og:description"
