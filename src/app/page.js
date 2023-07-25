@@ -7,6 +7,7 @@ import styles from "./page.module.css";
 import About from "@/components/About/About";
 import ProjectContainer from "@/components/ProjectContainer/ProjectContainer";
 import ExperienceContainer from "@/components/ExperienceContainer/ExperienceContainer";
+import { useInView } from "react-intersection-observer";
 
 // todo create breakpoints to change which section is active... ask Dave avout thiis
 // ! its called intersection observer
@@ -15,10 +16,20 @@ export default function Home() {
   const [aboutSection, setAboutSection] = useState(true);
   const [projectSection, setProjectSection] = useState(false);
   const [expSection, setExpSection] = useState(false);
-  const aboutRef = useRef(null);
-  const projectRef = useRef(null);
-  const expRef = useRef(null);
+
+  // const projectRef = useRef();
+  // const expRef = useRef();
+  // const [aboutVis, setAboutVis] = useState(true);
+  // const [projectVis, setProjectVis] = useState(false);
+  // const [expVis, setExpVis] = useState(false);
   const [mobile, setMobile] = useState(false);
+  const { ref: aboutRef, inView: aboutVis } = useInView();
+  const { ref: projectRef, inView: projectVis } = useInView();
+  const { ref: expRef, inView: expVis } = useInView();
+
+  console.log("aboutVis: ", aboutVis);
+  console.log("projectVis: ", projectVis);
+  console.log("expVis: ", expVis);
 
   useEffect(() => {
     if (window.innerWidth < 600) {
@@ -26,6 +37,23 @@ export default function Home() {
     } else {
       setMobile(false);
     }
+    // const observer = new IntersectionObserver((entries) => {
+    //   const entry = entries[0];
+    //   setAboutVis(entry.isIntersecting);
+    // });
+    // observer.observe(aboutRef.current);
+
+    //! figure out scroll direction then set the section based on which ones are visible
+    //! should only be one at a time.
+    //! if going up then the bottom on takes precedent, opposite is true as well.
+
+    // if (aboutVis) {}
+
+    // if (projectVis) {
+    //   setProjectSection(true);
+    // } else {
+    //   setProjectSection(false);
+    // }
   });
 
   function handleClick(item) {
@@ -43,9 +71,7 @@ export default function Home() {
   }
 
   function scrollTo(el) {
-    console.log(el);
     let item = el.current;
-    console.log(el.current);
     item.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
