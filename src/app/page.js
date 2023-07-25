@@ -17,19 +17,11 @@ export default function Home() {
   const [projectSection, setProjectSection] = useState(false);
   const [expSection, setExpSection] = useState(false);
 
-  // const projectRef = useRef();
-  // const expRef = useRef();
-  // const [aboutVis, setAboutVis] = useState(true);
-  // const [projectVis, setProjectVis] = useState(false);
-  // const [expVis, setExpVis] = useState(false);
+  const option = { threshold: 0.3 };
   const [mobile, setMobile] = useState(false);
-  const { ref: aboutRef, inView: aboutVis } = useInView();
-  const { ref: projectRef, inView: projectVis } = useInView();
-  const { ref: expRef, inView: expVis } = useInView();
-
-  console.log("aboutVis: ", aboutVis);
-  console.log("projectVis: ", projectVis);
-  console.log("expVis: ", expVis);
+  const { ref: aboutRef, inView: aboutVis } = useInView(option);
+  const { ref: projectRef, inView: projectVis, options } = useInView(option);
+  const { ref: expRef, inView: expVis } = useInView(option);
 
   useEffect(() => {
     if (window.innerWidth < 600) {
@@ -37,24 +29,27 @@ export default function Home() {
     } else {
       setMobile(false);
     }
-    // const observer = new IntersectionObserver((entries) => {
-    //   const entry = entries[0];
-    //   setAboutVis(entry.isIntersecting);
-    // });
-    // observer.observe(aboutRef.current);
+  }, []);
 
-    //! figure out scroll direction then set the section based on which ones are visible
-    //! should only be one at a time.
-    //! if going up then the bottom on takes precedent, opposite is true as well.
-
-    // if (aboutVis) {}
-
-    // if (projectVis) {
-    //   setProjectSection(true);
-    // } else {
-    //   setProjectSection(false);
-    // }
+  useEffect(() => {
+    handleSection();
   });
+
+  function handleSection() {
+    if (aboutVis) {
+      setAboutSection(true);
+      setProjectSection(false);
+      setExpSection(false);
+    } else if (projectVis) {
+      setAboutSection(false);
+      setProjectSection(true);
+      setExpSection(false);
+    } else {
+      setAboutSection(false);
+      setProjectSection(false);
+      setExpSection(true);
+    }
+  }
 
   function handleClick(item) {
     setAboutSection(false);
