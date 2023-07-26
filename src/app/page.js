@@ -9,9 +9,6 @@ import ProjectContainer from "@/components/ProjectContainer/ProjectContainer";
 import ExperienceContainer from "@/components/ExperienceContainer/ExperienceContainer";
 import { useInView } from "react-intersection-observer";
 
-// todo stop the headers overlapping... end sticky when new one passes.
-// ! use intersection observer
-
 export default function Home() {
   const [aboutSection, setAboutSection] = useState(true);
   const [projectSection, setProjectSection] = useState(false);
@@ -23,7 +20,7 @@ export default function Home() {
   const projectRefer = useRef();
   const expRefer = useRef();
   const [aboutRef, aboutVis] = useInView(option);
-  const { ref: projectRef, inView: projectVis, options } = useInView(option);
+  const { ref: projectRef, inView: projectVis } = useInView(option);
   const { ref: expRef, inView: expVis } = useInView(option);
 
   useEffect(() => {
