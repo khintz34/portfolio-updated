@@ -2,9 +2,9 @@
 import react from "react";
 import styles from "./About.module.scss";
 
-export default function About() {
+export default function About({ reference }) {
   return (
-    <main className={styles.aboutMain}>
+    <main className={styles.aboutMain} ref={reference}>
       <div className={styles.intro}>
         Hi, my name is Kevin. I am a software engineer with a passion for Web
         Development! Currently I am working for a{" "}

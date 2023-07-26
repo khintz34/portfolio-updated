@@ -6,9 +6,9 @@ import usb from "../../assets/images/usb.png";
 import bethel from "../../assets/images/bethel.jpeg";
 import odin from "../../assets/images/odin.png";
 
-export default function ExperienceContainer() {
+export default function ExperienceContainer({ reference }) {
   return (
-    <main className={styles.experienceContainer}>
+    <main className={styles.experienceContainer} ref={reference}>
       <Experience
         title="Software Engineer"
         company="U.S. Bank"

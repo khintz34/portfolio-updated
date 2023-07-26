@@ -9,8 +9,8 @@ import ProjectContainer from "@/components/ProjectContainer/ProjectContainer";
 import ExperienceContainer from "@/components/ExperienceContainer/ExperienceContainer";
 import { useInView } from "react-intersection-observer";
 
-// todo create breakpoints to change which section is active... ask Dave avout thiis
-// ! its called intersection observer
+// todo stop the headers overlapping... end sticky when new one passes.
+// ! use intersection observer
 
 export default function Home() {
   const [aboutSection, setAboutSection] = useState(true);
@@ -19,7 +19,10 @@ export default function Home() {
 
   const option = { threshold: 0.3 };
   const [mobile, setMobile] = useState(false);
-  const { ref: aboutRef, inView: aboutVis } = useInView(option);
+  const aboutRefer = useRef(null);
+  const projectRefer = useRef();
+  const expRefer = useRef();
+  const [aboutRef, aboutVis] = useInView(option);
   const { ref: projectRef, inView: projectVis, options } = useInView(option);
   const { ref: expRef, inView: expVis } = useInView(option);
 
@@ -32,8 +35,16 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    handleSection();
+    if (!mobile) {
+      handleSection();
+    } else {
+      handleHeaders();
+    }
   });
+
+  function handleHeaders() {
+    console.log("heand");
+  }
 
   function handleSection() {
     if (aboutVis) {
@@ -106,7 +117,7 @@ export default function Home() {
               status={aboutSection}
               onClick={() => {
                 handleClick("about");
-                scrollTo(aboutRef);
+                scrollTo(aboutRefer);
               }}
             />
             <GoTo
@@ -114,7 +125,7 @@ export default function Home() {
               status={projectSection}
               onClick={() => {
                 handleClick("project");
-                scrollTo(projectRef);
+                scrollTo(projectRefer);
               }}
             />
             <GoTo
@@ -122,7 +133,7 @@ export default function Home() {
               status={expSection}
               onClick={() => {
                 handleClick("exp");
-                scrollTo(expRef);
+                scrollTo(expRefer);
               }}
             />
           </div>
@@ -131,15 +142,15 @@ export default function Home() {
       <div className={styles.rightCol}>
         <h2 className={styles.heading}>About</h2>
         <div ref={aboutRef}>
-          <About />
+          <About reference={aboutRefer} />
         </div>
         <h2 className={styles.heading}>Projects</h2>
         <div ref={projectRef}>
-          <ProjectContainer />
+          <ProjectContainer reference={projectRefer} />
         </div>
         <h2 className={styles.heading}>Experience</h2>
         <div ref={expRef}>
-          <ExperienceContainer />
+          <ExperienceContainer reference={expRefer} />
         </div>
       </div>
     </main>

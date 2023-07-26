@@ -8,9 +8,9 @@ import football from "../../assets/images/footballapi.png";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 
-export default function ProjectContainer() {
+export default function ProjectContainer({ reference }) {
   return (
-    <main className={styles.projectContainer}>
+    <main className={styles.projectContainer} ref={reference}>
       <Project
         image={milk}
         title="Pump End Date Calculator"
