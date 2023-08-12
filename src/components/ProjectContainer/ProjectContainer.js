@@ -5,6 +5,7 @@ import styles from "./ProjectContainer.module.scss";
 import milk from "../../assets/images/milk.png";
 import hipcamp from "../../assets/images/hipcamp.png";
 import football from "../../assets/images/footballapi.png";
+import nana from "../../assets/images/nana.png";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 
@@ -34,6 +35,14 @@ export default function ProjectContainer({ reference }) {
         alt="EPL Team Tracker Image"
         tech={["React", "Next.js", "Vercel", "RapidAPI"]}
         link="https://football-api-app.vercel.app/"
+      />
+      <Project
+        image={nana}
+        title="Nana's Memories"
+        about="This project was made as a place to capture memories of my grandma. It serves as a place for my family to post their favorite memories of our grandma. It utilizes Next.js, Vercel, React, and Google Firebase Realtime Databse and Storage. "
+        alt="Nana's Memories Image"
+        tech={["React", "Next.js", "Vercel", "Google Firebase"]}
+        link="https://nanas-memories.vercel.app/"
       />
 
       <p className={styles.h4}>
