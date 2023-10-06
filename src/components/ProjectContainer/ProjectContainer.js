@@ -13,6 +13,14 @@ export default function ProjectContainer({ reference }) {
   return (
     <main className={styles.projectContainer} ref={reference}>
       <Project
+        image={nana}
+        title="Nana's Memories"
+        about="This project was made as a place to capture memories of my grandma. It serves as a place for my family to post their favorite memories of our grandma. It utilizes Next.js, Vercel, React, and Google Firebase Realtime Databse and Storage. "
+        alt="Nana's Memories Image"
+        tech={["React", "Next.js", "Vercel", "Google Firebase"]}
+        link="https://nanas-memories.vercel.app/"
+      />
+      <Project
         image={milk}
         title="Pump End Date Calculator"
         about="This was a project I made for my wife to find out when she can be done pumping based on critiera like stored milk, oz needed per day, and oz saved, and milk end date. It was created using React and Next.js, and is deployed through Vercel."
@@ -35,14 +43,6 @@ export default function ProjectContainer({ reference }) {
         alt="EPL Team Tracker Image"
         tech={["React", "Next.js", "Vercel", "RapidAPI"]}
         link="https://football-api-app.vercel.app/"
-      />
-      <Project
-        image={nana}
-        title="Nana's Memories"
-        about="This project was made as a place to capture memories of my grandma. It serves as a place for my family to post their favorite memories of our grandma. It utilizes Next.js, Vercel, React, and Google Firebase Realtime Databse and Storage. "
-        alt="Nana's Memories Image"
-        tech={["React", "Next.js", "Vercel", "Google Firebase"]}
-        link="https://nanas-memories.vercel.app/"
       />
 
       <p className={styles.h4}>
