@@ -1,11 +1,10 @@
 "use client";
-import react from "react";
 import Project from "../Project/Project";
 import styles from "./ProjectContainer.module.scss";
-import milk from "../../assets/images/milk.png";
 import hipcamp from "../../assets/images/hipcamp.png";
 import football from "../../assets/images/footballapi.png";
 import nana from "../../assets/images/nana.png";
+import sam from "../../assets/images/sam.png";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 

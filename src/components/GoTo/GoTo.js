@@ -1,5 +1,4 @@
 "use client";
-import react from "react";
 import styles from "./GoTo.module.scss";
 
 export default function GoTo({ title, status, onClick, reference }) {

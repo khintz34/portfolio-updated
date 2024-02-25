@@ -1,4 +1,3 @@
-import react from "react";
 import styles from "./archive.module.scss";
 import { FaArrowLeft } from "react-icons/fa";
 import Link from "next/link";
