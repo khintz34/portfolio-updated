@@ -8,6 +8,7 @@ import football from "../../assets/images/footballapi.png";
 import ispy from "../../assets/images/ispy.png";
 import workout from "../../assets/images/workout.png";
 import dadmode from "../../assets/images/dadmode.png";
+import sam from "../../assets/images/sam.png";
 
 export default function ProjectArchive() {
   return (
@@ -22,6 +23,14 @@ export default function ProjectArchive() {
       </div>
       <h1>All Projects</h1>
       <div className={styles.projectContainer}>
+        <Project
+          image={sam}
+          title="Sam Pausha Coaching"
+          about="This is a project for a freelance client of mine, Sam Pausha Coaching. Its his company website for information about his coaching offersings, ways to contact him, and to learn about Sam Pausha Coaching."
+          alt="Sam Pausha Coaching Hero Image - Swim Bike Run"
+          tech={["React", "Next.js", "Vercel", "SCSS, TypeScript"]}
+          link="https://www.sampaushacoaching.com/"
+        />
         <Project
           image={milk}
           title="Pump End Date Calculator"
