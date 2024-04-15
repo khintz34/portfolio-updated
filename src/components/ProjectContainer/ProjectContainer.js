@@ -5,6 +5,7 @@ import hipcamp from "../../assets/images/hipcamp.png";
 import football from "../../assets/images/footballapi.png";
 import nana from "../../assets/images/nana.png";
 import sam from "../../assets/images/sam.png";
+import grocery from "../../assets/images/grocery.png";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 
@@ -18,6 +19,21 @@ export default function ProjectContainer({ reference }) {
         alt="Sam Pausha Coaching Hero Image - Swim Bike Run"
         tech={["React", "Next.js", "Vercel", "SCSS, TypeScript"]}
         link="https://www.sampaushacoaching.com/"
+      />
+      <Project
+        image={grocery}
+        title="Grocery mate"
+        about="This is a project I created to make our family's life a little easier at the grocery store. Not only is a grocery list, but it groups the items by category and tells you the path to take based on how you walk around the store. No more going back to Produce because you missed Apples when looking at your list!"
+        alt="Grocery Mate Screenshot"
+        tech={[
+          "React",
+          "Next.js",
+          "Vercel",
+          "SCSS, TypeScript",
+          "Google Firebase",
+          "Google Auth",
+        ]}
+        link="https://grocerymate-nine.vercel.app/SignIn"
       />
       <Project
         image={nana}
