@@ -6,22 +6,18 @@ export default function About({ reference }) {
   return (
     <main className={styles.aboutMain} ref={reference}>
       <div className={styles.intro}>
-        Hi, my name is Kevin. I am a software engineer with a passion for Web
-        Development! Currently I am working for a{" "}
+        Hi, my name is Kevin. I am a software engineer with a passion for learning new technologies and building useful tools! Currently I am working for{" "}
         <a
           className={styles.link}
-          href="https://www.usbank.com/index.html"
+          href="https://cloudcomputingconsultants.com/"
           target="_blank"
         >
-          U.S. Bank{" "}
+          Cloud Computing Consultants{" "}
         </a>
-        as an engineer working on a system that services millions of credit card
-        transactions every day. The reason why I have gotten into front-end dev
-        work is because I love taking data and turning it into a user-friendly
-        interactive web app.
+        as a software engineer. I work closely with clients to deliver solutions that align with their business requirements, adhere to current industry standards, and are designed for long-term maintainability. I focus on building clean, intuitive user interfaces and writing clear, organized code to ensure that future developers can easily support and extend the application.
       </div>
       <div className={styles.intro}>
-        I went through an internal bootcamp at U.S. Bank to get into software
+        Before CCC, I went through an internal bootcamp at U.S. Bank to get into software
         and then quickly began exploring other technologies. As a result, I fell
         in love with frontend development and completed{" "}
         <a
@@ -37,7 +33,7 @@ export default function About({ reference }) {
       </div>
       <div className={styles.intro}>
         Away from the keyboard you can find me with my family, playing soccer or
-        pickleball, hanging with my pups, or reading a book!
+        pickleball, hanging with my pup, or reading a book!
       </div>
     </main>
   );
