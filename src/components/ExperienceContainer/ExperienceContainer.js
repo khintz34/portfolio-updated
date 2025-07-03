@@ -5,7 +5,7 @@ import styles from "./ExperienceContainer.module.scss";
 import usb from "../../assets/images/usb.png";
 import bethel from "../../assets/images/bethel.jpeg";
 import odin from "../../assets/images/odin.png";
-import ccc from "../../assets/images/ccc_logo"
+import ccc from "../../assets/images/ccc.png"
 
 export default function ExperienceContainer({ reference }) {
   return (
