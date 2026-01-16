@@ -5,16 +5,26 @@ import styles from "./ExperienceContainer.module.scss";
 import usb from "../../assets/images/usb.png";
 import bethel from "../../assets/images/bethel.jpeg";
 import odin from "../../assets/images/odin.png";
-import ccc from "../../assets/images/ccc.png"
+import ccc from "../../assets/images/ccc.png";
+import securian from "../../assets/images/securian.png";
 
 export default function ExperienceContainer({ reference }) {
   return (
     <main className={styles.experienceContainer} ref={reference}>
-            <Experience
+      <Experience
+        title="Senior Software Engineer"
+        company="Securian Financial"
+        para="Supporting the My Account platform, building and maintaining features using React, Java, and AWS."
+        dates="Sep 2025 - Present"
+        image={securian}
+        alt="Securian Financial logo"
+        companyLink="https://securian.com/"
+      />
+      <Experience
         title="Software Engineer"
         company="Cloud Computing Consultants"
-        para="Consult with clients to deliver solutions meeting their business requirements via applications developed in Golang, Angular, and using GCP."
-        dates="May 2024 - Present"
+        para="Consult with clients to deliver solutions meeting their business requirements via applications developed in Golang, Angular, and GCP."
+        dates="May 2024 - Sep 2025"
         image={ccc}
         alt="CCC logo"
         companyLink="https://cloudcomputingconsultants.com/"

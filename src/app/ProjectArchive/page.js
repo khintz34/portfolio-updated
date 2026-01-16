@@ -4,7 +4,6 @@ import Link from "next/link";
 import Project from "../../components/Project/Project";
 import milk from "../../assets/images/milk.png";
 import hipcamp from "../../assets/images/hipcamp.png";
-import football from "../../assets/images/footballapi.png";
 import ispy from "../../assets/images/ispy.png";
 import workout from "../../assets/images/workout.png";
 import dadmode from "../../assets/images/dadmode.png";
@@ -25,12 +24,20 @@ export default function ProjectArchive() {
       <h1>All Projects</h1>
       <div className={styles.projectContainer}>
         <Project
+          image={explorepass}
+          title="The Explore Pass"
+          about="The Explore Pass gives you FREE or discounted access to the best Twin Cities attractions written in React, Node, and uses AWS Amplify."
+          alt="The Explore Pass Hero Image"
+          tech={["React", "Node", "Amplify", "SES", "DynamoDB", "Cognito"]}
+          link="https://theexplorepass.com"
+        />
+        <Project
           image={sam}
           title="Sam Pausha Coaching"
           about="This is a project for a freelance client of mine, Sam Pausha Coaching. Its his company website for information about his coaching offersings, ways to contact him, and to learn about Sam Pausha Coaching."
           alt="Sam Pausha Coaching Hero Image - Swim Bike Run"
-          tech={["React", "Next.js", "Vercel", "SCSS, TypeScript"]}
-          link="https://www.sampaushacoaching.com/"
+          tech={["React", "Next.js", "Vercel", "SCSS", "TypeScript"]}
+          link="https://sampaushacoaching.vercel.app"
         />
         <Project
           image={grocery}
@@ -62,14 +69,6 @@ export default function ProjectArchive() {
           alt="Hipcamp Clone Image"
           tech={["React", "GH Pages", "Google Firebase"]}
           link="https://khintz34.github.io/hipcamp-clone-TOP/"
-        />
-        <Project
-          image={football}
-          title="EPL Team Tracker"
-          about="This project was made to practice using APIs in a variety of different ways. It was created using React, Next.js, and API-Football from RapidAPI. The basic premise is you can find stats, schedules, rosters, and standings from each team in the English Premier League."
-          alt="EPL Team Tracker Image"
-          tech={["React", "Next.js", "Vercel", "RapidAPI"]}
-          link="https://football-api-app.vercel.app/"
         />
         <Project
           image={ispy}
