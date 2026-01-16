@@ -14,7 +14,7 @@ export default function ExperienceContainer({ reference }) {
       <Experience
         title="Senior Software Engineer"
         company="Securian Financial"
-        para="Supporting the My Account platform, building and maintaining features using React, Java, and AWS."
+        para="Supporting the My Account platform by building and maintaining features using React, Java, and AWS."
         dates="Sep 2025 - Present"
         image={securian}
         alt="Securian Financial logo"
