@@ -13,7 +13,7 @@ export default function About({ reference }) {
           href="https://www.securian.com/"
           target="_blank"
         >
-          Securian Financial{""}
+          Securian Financial{" "}
         </a>
         as a senior software engineer. I work closely with the business line to
         deliver solutions that align with requirements, adhere to current

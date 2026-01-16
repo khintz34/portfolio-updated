@@ -14,7 +14,7 @@ export default function ProjectContainer({ reference }) {
       <Project
         image={explorepass}
         title="The Explore Pass"
-        about="The Explore Pass gives you FREE or discounted access to the best Twin Cities attractions written in React, Node, and uses AWS Amplify."
+        about="The Explore Pass gives you FREE or discounted access to the best Twin Cities attractions, so you can make the most of every moment, without breaking the bank!"
         alt="The Explore Pass Hero Image"
         tech={["React", "Node", "Amplify", "SES", "DynamoDB", "Cognito"]}
         link="https://theexplorepass.com"
