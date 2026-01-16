@@ -9,6 +9,7 @@ import workout from "../../assets/images/workout.png";
 import dadmode from "../../assets/images/dadmode.png";
 import sam from "../../assets/images/sam.png";
 import grocery from "../../assets/images/grocery.png";
+import explorepass from "../../assets/images/explorepass.png";
 
 export default function ProjectArchive() {
   return (
