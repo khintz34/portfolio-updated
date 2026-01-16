@@ -85,7 +85,7 @@ export default function Home() {
           <div>
             <h1 className={styles.h1}>Kevin Hintz</h1>
             <h2 className={styles.h2}>
-              Software Engineer <br></br> CCC
+              Software Engineer <br></br> Securian Financial
             </h2>
             <h3 className={styles.h3}>
               Dedicated to optimizing customer experience through clean UI,
